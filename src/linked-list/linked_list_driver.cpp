@@ -29,7 +29,7 @@ int main(){
 
     Node *curr = head;
 
-    Node *fill = new Node(4);
+    Node *fill = new Node({4});
 
     for(int i=0; i<5; i++){
         curr->next = new Node({i});
@@ -41,6 +41,9 @@ int main(){
         std::cout << curr->data << " -> ";
         curr = curr->next;
     }
+
+    //TODO: delete the nodes
+    
 
     return 0;
 }
